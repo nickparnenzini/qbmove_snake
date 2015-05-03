@@ -1,0 +1,298 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="qbmove_snake">
+     
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_1</name>
+      <pose>0.0 0.0 0.0 -1.57 -1.57 0</pose>
+    </include>
+     <plugin name="plugin_qbmove_1" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_1>qbmove_1</model_qbmove_1>
+    </plugin>
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_2</name>
+      <pose>0.0 0.089 0.0 -1.57 0 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_2" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_2>qbmove_2</model_qbmove_2>
+    </plugin>
+
+     <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_3</name>
+      <pose>0.0 0.178 0.0 -1.57 -1.57 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_3" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_3>qbmove_3</model_qbmove_3>
+    </plugin>
+
+     <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_4</name>
+      <pose>0.0 0.267 0.0 -1.57 0 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_4" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_4>qbmove_4</model_qbmove_4>
+    </plugin>
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_5</name>
+     <pose>0.0 0.356 0.0 -1.57 -1.57 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_5" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_5>qbmove_5</model_qbmove_5>
+    </plugin>  
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_6</name>
+      <pose>0.0 0.445 0.0 -1.57 0 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_6" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_6>qbmove_6</model_qbmove_6>
+    </plugin> 
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_7</name>
+      <pose>0.0 0.534 0.0 -1.57 -1.57 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_7" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_7>qbmove_7</model_qbmove_7>
+    </plugin>
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_8</name>
+      <pose>0.0 0.623 0.0 -1.57 0 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_8" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_8>qbmove_8</model_qbmove_8>
+    </plugin>
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_9</name>
+      <pose>0.0 0.712 0.0 -1.57 -1.57 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_9" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_9>qbmove_9</model_qbmove_9>
+    </plugin>
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_10</name>
+      <pose>0.0 0.801 0.0 -1.57 0 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_10" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_10>qbmove_10</model_qbmove_10>
+    </plugin>
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_11</name>
+      <pose>0.0 0.890 0.0 -1.57 -1.57 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_11" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_11>qbmove_11</model_qbmove_11>
+    </plugin>
+
+    <include>
+      <uri>model://qbmove_inertial</uri>
+      <name>qbmove_12</name>
+      <pose>0.0 0.979 0.0 -1.57 0 0</pose>
+    </include>
+    <plugin name="plugin_qbmove_12" filename="build/libqbmove_multiple.so" >  
+      <model_qbmove_12>qbmove_12</model_qbmove_12>
+    </plugin>
+
+     <link name="battery">
+        <pose>0 1.068 0 0.0 0 0</pose>
+        <inertial>
+          <pose>0 0 0.0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.015625</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.015625</iyy>
+            <iyz>0</iyz>
+            <izz>0.015625</izz>
+          </inertia>
+        </inertial>
+        <collision name="battery_collision">
+          <pose>0 0 0.0 0.0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="battery_visual">
+          <pose>0 0 0.0 0.0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+  
+  
+   <joint name="arm_joint_1" type="revolute">
+      <parent>qbmove_1::flange</parent>
+      <child>qbmove_2::cube</child>
+      <pose>0 0.089 0.065 0 0 0</pose>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 1 0</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_2" type="revolute">
+      <parent>qbmove_2::flange</parent>
+      <child>qbmove_3::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_3" type="revolute">
+      <parent>qbmove_3::flange</parent>
+      <child>qbmove_4::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_4" type="revolute">
+      <parent>qbmove_4::flange</parent>
+      <child>qbmove_5::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_5" type="revolute">
+      <parent>qbmove_5::flange</parent>
+      <child>qbmove_6::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_6" type="revolute">
+      <parent>qbmove_6::flange</parent>
+      <child>qbmove_7::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_7" type="revolute">
+      <parent>qbmove_7::flange</parent>
+      <child>qbmove_8::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_8" type="revolute">
+      <parent>qbmove_8::flange</parent>
+      <child>qbmove_9::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_9" type="revolute">
+      <parent>qbmove_9::flange</parent>
+      <child>qbmove_10::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_10" type="revolute">
+      <parent>qbmove_10::flange</parent>
+      <child>qbmove_11::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_11" type="revolute">
+      <parent>qbmove_11::flange</parent>
+      <child>qbmove_12::cube</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="arm_joint_12" type="revolute">
+      <parent>qbmove_12::flange</parent>
+      <child>battery</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+  
+  </model>
+</sdf>

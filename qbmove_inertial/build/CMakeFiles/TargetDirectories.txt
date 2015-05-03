@@ -1,0 +1,4 @@
+/home/valeria/.gazebo/models/qbmove_snake/build/msgs/CMakeFiles/pos_current_echo_creator_msgs.dir
+/home/valeria/.gazebo/models/qbmove_snake/build/msgs/CMakeFiles/position_stiffness_creator_msgs.dir
+/home/valeria/.gazebo/models/qbmove_snake/build/CMakeFiles/qbmove_multiple.dir
+/home/valeria/.gazebo/models/qbmove_snake/build/CMakeFiles/talker.dir
